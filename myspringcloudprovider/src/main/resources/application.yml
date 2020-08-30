@@ -9,6 +9,6 @@ spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://localhost:3306/springdb?serverTimezone=GMT%2B8 # 数据库连接地址
+   url: jdbc:mysql://localhost:3306/springtest?serverTimezone=GMT%2B8 # 数据库连接地址
    username: luoamin
    password: '000000' #springcloud配置数据库密码使用字符串，否则会报Access denied for user的错误

@@ -3,13 +3,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.luoamin.mapper.ProductMapper">
     <resultMap id="productMap" type="com.luoamin.vo.Product">
-        <result column="productid" property="productId"></result>
-        <result column="productname" property="productName"></result>
-        <result column="productdesc" property="productDesc"></result>
+        <result column="productid" property="productId" />
+        <result column="productname" property="productName" />
+        <result column="productdesc" property="productDesc" />
     </resultMap>
     <select id="findById" resultMap="productMap" parameterType="long">
         select productid,productname,productdesc from product WHERE productid=#{id} ;
     </select>
+    <!-- 查询时配置好数据库，springtest，数据库配置错误也会导致Unknown column 'productid' in 'field list'的错误 -->
     <select id="findAll" resultMap="productMap">
         SELECT productid,productname,productdesc from product;
     </select>
