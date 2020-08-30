@@ -1,0 +1,5 @@
+server:
+  port: 7071
+eureka:
+  instance: #eureka实例名称
+    hostname: localhost #eureka实例所在主机名称

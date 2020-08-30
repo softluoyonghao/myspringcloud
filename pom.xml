@@ -9,6 +9,7 @@
         <module>myspringcloudprovider</module>
         <module>myspringcloudconsumer</module>
         <module>myspringcloudsecurity</module>
+        <module>myspringbloudeureka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
