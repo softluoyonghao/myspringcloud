@@ -7,6 +7,7 @@
     <modules>
         <module>myspringcloudapi</module>
         <module>myspringcloudprovider</module>
+        <module>myspringcloudconsumer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

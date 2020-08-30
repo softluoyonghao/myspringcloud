@@ -2,10 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.luoamin.mapper.ProductMapper">
+    <!-- result不区分单标签和双标签是都都没有问题 -->
     <resultMap id="productMap" type="com.luoamin.vo.Product">
-        <result column="productid" property="productId" />
-        <result column="productname" property="productName" />
-        <result column="productdesc" property="productDesc" />
+        <result column="productid" property="productId" ></result>
+        <result column="productname" property="productName" ></result>
+        <result column="productdesc" property="productDesc" ></result>
     </resultMap>
     <select id="findById" resultMap="productMap" parameterType="long">
         select productid,productname,productdesc from product WHERE productid=#{id} ;
