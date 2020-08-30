@@ -63,15 +63,15 @@
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>-->
+        <!-- provider模块使用自定义模块加密机制，外网就不会访问到服务提供方暴露的接口，
+        只有通过在服务消费方在请求头解密之后才可以使用 -->
+        <dependency>
+            <groupId>com.luoamin</groupId>
+            <artifactId>myspringcloud-security</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>

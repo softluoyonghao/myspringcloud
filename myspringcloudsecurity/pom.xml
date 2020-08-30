@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>myspringcloud-consumer</artifactId>
+    <artifactId>myspringcloud-security</artifactId>
 
-    <name>myspringcloud-consumer</name>
+    <name>myspringcloud-security</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -29,18 +29,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.luoamin</groupId>
-            <artifactId>myspringcloud-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
