@@ -19,3 +19,4 @@ eureka:
       defaultZone:  http://localhost:7071/eureka
   instance:
     instance-id: myspringcloud-provider
+    prefer-ip-address: true
