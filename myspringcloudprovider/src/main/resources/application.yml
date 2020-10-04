@@ -12,3 +12,10 @@ spring:
    url: jdbc:mysql://localhost:3306/springtest?serverTimezone=GMT%2B8 # 数据库连接地址
    username: luoamin
    password: '000000' #springcloud配置数据库密码使用字符串，否则会报Access denied for user的错误
+
+eureka:
+  client: #客户端进行eureka注册的配置
+    service-url:
+      defaultZone:  http://localhost:7071/eureka
+  instance:
+    instance-id: myspringcloud-provider
